@@ -17,7 +17,6 @@ body {
     font-weight: 500;
     margin: 0;
     padding: 0;
-    position: absolute;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -37,16 +36,7 @@ ul,
 li {
     list-style: none;
 }
-.full--vh{
-    @include lg {
-       min-height: 100vh;
-   }
-}
-.full--vw{
-   @include lg {
-       padding: 0 !important;
-   }
-}
+
 .btn-link {
     color: #000000;
     text-decoration: none;
@@ -93,6 +83,12 @@ h1 {
     padding: 0;
     @include md {
         padding: 0 calc(50vw - 700px);
+    }
+    --full{
+        @include lg{
+            padding: 0!important;
+            width: 100vw;
+        }
     }
 }
 

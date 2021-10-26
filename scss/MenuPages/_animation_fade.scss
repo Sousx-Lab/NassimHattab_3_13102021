@@ -1,8 +1,5 @@
 $dot: "0.";
-@for $i from 1 through 3{
-    @if $i > 3{
-        $i : #{$dot}#{1}#{'s'};
-    }
+@for $i from 1 through 4{
     .fade:nth-child(#{$i}){
         animation-delay: #{$dot}#{$i}#{'s'};
     }
