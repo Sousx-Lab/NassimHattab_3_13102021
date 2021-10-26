@@ -1,0 +1,159 @@
+#restaurants {
+    background-color: $light-gray;
+    width: 100%;
+    padding-bottom: 60px;
+
+    @include md {
+        background-color: unset;
+        margin-bottom: 60px;
+        padding-top: 0;
+
+        h1 {
+            text-align: center;
+            padding-bottom: 40px;
+
+            @include lg {
+                padding-bottom: 60px;
+            }
+        }
+    }
+
+    .card-groups {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 16px;
+
+        @include lg {
+            flex-flow: row wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        &>.card-link {
+            all: unset;
+            cursor: pointer;
+        }
+
+        .card {
+            position: relative;
+            width: 100%;
+            margin-top: 0;
+            border-radius: 12px;
+            box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.23);
+            -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.23);
+            -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.23);
+
+            @include md {
+                &:hover {
+                    -ms-transform: perspective(1px) scale(1.02) translateX(0);
+                    -webkit-transform: perspective(1px) scale(1.02) translateX(0);
+                    transform: perspective(1px) scale(1.02) translateX(0);
+                }
+
+            }
+
+            @include lg {
+                width: 45%;
+                height: 400px;
+
+            }
+        }
+
+        .card-img {
+            width: 100%;
+            height:  145px;
+            object-fit: cover;
+            object-position: 50% 100%;
+            border-radius: 12px 12px 0 0;
+
+            @include md {
+                height: 300px;
+                object-position: 100% 70%;
+            }
+        }
+
+        .card-info {
+            margin: 10px 10px 12px 10px;
+
+            h4 {
+                font-weight: 800;
+                margin-bottom: 3px;
+                width: 100%;
+                position: relative;
+                font-size: 15px;
+                display: inline-block;
+
+                @include lg {
+                    font-size: 18px;
+                }
+
+            }
+
+            p {
+                opacity: 0.5;
+                font-size: 14px;
+            }
+        }
+
+        .card-new-tag {
+            position: absolute;
+            padding: 6px 12px;
+            background-color: $green;
+            color: #008766;
+            font-size: 12px;
+            top: 10px;
+            right: 10px;
+        }
+    }
+}
+
+.btn-fav {
+    position: absolute;
+    right: 3%;
+    top: 0;
+    cursor: pointer;
+    color: $dark;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+
+    .fa {
+        display: none;
+        font-size: inherit;
+        background: linear-gradient(to top, $pink 0%, $purple 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .far {
+        font-size: inherit;
+    }
+
+    &:focus {
+        .fa {
+            display: inline;
+        }
+
+        .far {
+            display: none;
+        }
+    }
+
+    @include md {
+        &:hover {
+            .fa {
+                display: inline;
+
+            }
+
+            .far {
+                display: none;
+            }
+
+        }
+
+    }
+
+}

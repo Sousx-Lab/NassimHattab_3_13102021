@@ -1,0 +1,205 @@
+#restau-menu {
+    padding: 0;
+    width: 100vw;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .card-img {
+        width: 100%;
+        max-height: 215px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .card-menu {
+        margin-top: -12%;
+        width: 100%;
+        padding: 25px 10px;
+        background-color: $light-gray;
+        border-radius: 40px 40px 0 0;
+
+        h1 {
+            position: relative;
+            font-family: $shrikhand;
+            font-weight: 500;
+            font-size: 24px;
+            display: block;
+            padding: 0 8px;
+            margin-bottom: 25px;
+
+            .btn-fav {
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                right: 4%;
+                font-size: 20px;
+            }
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 14px;
+            opacity: 0.7;
+            display: inline-block;
+            margin-bottom: 12px;
+            padding: 0 8px;
+
+            &::after {
+                display: block;
+                font-weight: 800;
+                padding-top: 3px;
+                margin-top: 3px;
+                content: '';
+                width: 35px;
+                background-color: $green;
+            }
+        }
+    }
+
+    .card-items {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 30px;
+
+        .card-link {
+            padding: 8px;
+            border-radius: 12px;
+            background-color: $white;
+            line-height: 20px;
+            box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.23);
+            -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.23);
+            -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.23);
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+
+            .card-title {
+                font-size: 16px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 100%;
+                transition: width 0.3s;
+            }
+
+            .card-details {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+
+                p {
+                    font-size: 12px;
+                    font-weight: 400;
+                    display: block;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 80%;
+                }
+
+                .price {
+                    text-align: end;
+                    width: 20%;
+                    padding-right: 10px;
+                    align-self: flex-end;
+                    margin: auto;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+
+            .fa-check-circle {
+                position: absolute;
+                top: 0;
+                bottom: auto;
+                right: 0;
+                left: auto;
+                margin: auto;
+                height: 100%;
+                width: 0px;
+                border-radius: 0 12px 12px 0;
+                background-color: $green;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                overflow: hidden;
+
+                &::before {
+                    color: $white;
+                    font-size: 18px;
+                }
+
+            }
+
+            &:hover,
+            &:focus {
+                .card-title {
+                    width: 60%;
+                }
+
+                .fa-check-circle {
+                    animation: select-dish 0.5s forwards;
+
+                    &::before {
+                        animation: rotate-check-circle 0.5s forwards;
+                    }
+                }
+
+                .price {
+                    animation: margin-price 0.3s linear forwards;
+                }
+
+            }
+        }
+    }
+
+    .btn-link {
+        padding: 12px 40px;
+        margin: 10px auto 20px auto;
+        font-size: 14px;
+    }
+
+    .command-btn--center {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    @keyframes select-dish {
+        to {
+            width: 50px;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+    }
+
+    @keyframes margin-price {
+        0% {
+            margin: 0px
+        }
+
+        100% {
+            width: 30%;
+            padding-right: 60px;
+            margin-left: 30px;
+        }
+    }
+
+    @keyframes rotate-check-circle {
+        to {
+            transform: rotate(1turn);
+        }
+    }
+
+
+}

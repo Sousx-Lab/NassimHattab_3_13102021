@@ -1,0 +1,17 @@
+/* Globals import */
+@import "scss/globals/_font";
+@import "scss/globals/_colors";
+@import "scss/globals/_breakpoints";
+@import "scss/globals/_mixins";
+@import "scss/globals/_globals";
+
+/* homePage import*/
+@import "scss/homePage/_loading";
+@import "scss/homePage/_nav";
+@import "scss/homePage/_how-it-works";
+@import "scss/homePage/_choises_restaurant";
+@import "scss/homePage/_footer";
+
+/* MenuPage import*/
+@import "scss/MenuPages/_animation_fade";
+@import "scss/MenuPages/_compose_menu";

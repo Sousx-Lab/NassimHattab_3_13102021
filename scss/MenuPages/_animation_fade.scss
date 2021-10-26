@@ -1,0 +1,25 @@
+$dot: "0.";
+@for $i from 1 through 3{
+    @if $i > 3{
+        $i : #{$dot}#{1}#{'s'};
+    }
+    .fade:nth-child(#{$i}){
+        animation-delay: #{$dot}#{$i}#{'s'};
+    }
+}
+
+.fade {
+    opacity: 0;
+    transform: translateY(+20px);
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+    
+    to{
+        opacity: 1;
+        transform: translateY(0);
+        transition-property: opacity, transform;
+    }
+    
+    
+}
