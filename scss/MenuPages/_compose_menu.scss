@@ -1,6 +1,10 @@
 #restau-menu {
     padding: 0;
     width: 100%;
+    @include lg{
+        margin: 30px 0px;
+        padding: 0 50px;
+    }
 }
 
 .header {
@@ -18,19 +22,29 @@
     flex-direction: column;
     width: 100%;
     margin: auto;
-
+    @include lg{
+        flex-direction: row-reverse;
+        border-radius: 30px;
+        box-shadow: $box-shadow;
+        -webkit-box-shadow: $box-shadow;
+        -moz-box-shadow: $box-shadow;
+        overflow: hidden;
+    }
     .card-img {
         width: 100%;
-        max-height: 215px;
+        height: 215px;
         object-fit: cover;
         object-position: center center;
 
         @include md {
-            max-height: 300px;
+            height: 300px;
         }
 
         @include lg {
-            opacity: 0.6;
+            width: 35%;
+            height: auto;
+            opacity: 0.5;
+            margin-left: -5px;
         }
     }
 
@@ -42,14 +56,13 @@
         border-radius: 30px 30px 0 0;
         @include lg {
             background-color: $white;
-            margin-left: auto;
-            margin-right: auto;
+            // margin-left: auto;
+            // margin-right: auto;
+            margin-top: unset;
             z-index: 300;
             padding: 30px 50px;
-            width: calc(100vw - 50%);
-            box-shadow: $box-shadow;
-            -webkit-box-shadow: $box-shadow;
-            -moz-box-shadow: $box-shadow;
+            max-width: 800px;
+            border-radius: 0;
         }
 
         h1 {
@@ -62,7 +75,7 @@
             margin-bottom: 25px;
 
             @include lg {
-                font-size: 2rem;
+                font-size: 3rem;
             }
 
             .btn-fav {
