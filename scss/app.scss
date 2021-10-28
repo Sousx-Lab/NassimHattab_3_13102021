@@ -1,9 +1,8 @@
 /* globals import */
-@import "globals/_font";
-@import "globals/_colors";
-@import "globals/_breakpoints";
-@import "globals/_mixins";
-@import "globals/_globals";
+@import "base/_variables";
+@import "base/_breakpoints";
+@import "base/_mixins";
+@import "base/_reset";
 
 /* components import */
 @import "components/_animation_fade";
@@ -11,9 +10,9 @@
 @import "components/_loader";
 
 /* layout import */
-@import "layout/_container";
-@import "layout/_nav";
-@import "layout/_footer";
+@import "layouts/_container";
+@import "layouts/_nav";
+@import "layouts/_footer";
 
 /* pages import */
    /* ↳ Homepage*/
