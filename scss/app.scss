@@ -1,0 +1,24 @@
+/* globals import */
+@import "globals/_font";
+@import "globals/_colors";
+@import "globals/_breakpoints";
+@import "globals/_mixins";
+@import "globals/_globals";
+
+/* components import */
+@import "components/_animation_fade";
+@import "components/_buttons";
+@import "components/_loader";
+
+/* layout import */
+@import "layout/_container";
+@import "layout/_nav";
+@import "layout/_footer";
+
+/* pages import */
+   /* ↳ Homepage*/
+@import "pages/homePage/_choises_restaurant";
+@import "pages/homePage/_how-it-works";
+
+    /* ↳ Restaupage*/
+@import "pages/RestauPages/_compose_menu";
