@@ -37,28 +37,6 @@ li {
     list-style: none;
 }
 
-.btn-link {
-    color: #000000;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 25px;
-    background: linear-gradient($pink, $purple);
-    box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.78);
-    -webkit-box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.78);
-    -moz-box-shadow:0px 0px 14px -4px rgba(0, 0, 0, 0.78);
-    color: $white;
-    font-size: 14px;
-    border-radius: 23px;
-    opacity: 0.8;
-    font-weight: 400;
-    &:hover{
-        box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.78);
-        -webkit-box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.90);
-        -moz-box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.78);
-        opacity: 0.7;
-    }
-}
-
 h1 {
     font-weight: 800;
     padding-bottom: 15px;
@@ -67,37 +45,6 @@ h1 {
     @include md {
         font-size: 40px;
         padding-bottom: 30px;
-    }
-}
-
-
-.pb-4 {
-    padding-bottom: 8px;
-}
-
-.pb-6 {
-    padding-bottom: 18px;
-}
-
-.container {
-    padding: 0;
-    @include md {
-        padding: 0 calc(50vw - 700px);
-    }
-    --full{
-        @include lg{
-            padding: 0!important;
-            width: 100vw;
-        }
-    }
-}
-
-.section {
-
-    padding: 40px 20px;
-
-    @include md {
-        padding: 40px 40px;
     }
 }
 

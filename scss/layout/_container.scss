@@ -1,0 +1,21 @@
+.container {
+    padding: 0;
+    @include md {
+        padding: 0 calc(50vw - 700px);
+    }
+    --full{
+        @include lg{
+            padding: 0!important;
+            width: 100vw;
+        }
+    }
+}
+
+.section {
+
+    padding: 40px 20px;
+
+    @include md {
+        padding: 40px 40px;
+    }
+}
