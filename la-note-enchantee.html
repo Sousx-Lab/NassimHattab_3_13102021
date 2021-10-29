@@ -15,65 +15,73 @@
 
 <body>
     <!-- Header -->
-    <header class="container">
+    <header>
         <nav class="main-nav">
-            <div class="main-logo">
-                <a class="back-link" href="./index.html"><i class="fas fa-arrow-left"></i></a>
+            <div class="main__logo">
+                <a class="back__link" href="./index.html"><i class="fas fa-arrow-left"></i></a>
                 <img class="logo" src="./images/logo/ohmyfood@2x.svg" alt="Oh My food logo">
             </div>
         </nav>
     </header>
     <!-- END Header-->
-    
+
     <!-- Main section-->
-    <main class="container">
+    <main class="container--fluid">
         <section id="restau-menu" class="section">
-            <div class="card-container">
-                <img class="card-img" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                    alt="La note enchantée">
-                <div class="card-menu">
+            <div class="card__container">
+                <img class="card__img" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                <div class="card__menu">
                     <h1>La note enchantée
-                        <button class="btn-fav">
-                            <i class="far fa-heart" aria-hidden="true"></i>
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                        </button>
+                        <span class="btn__fav">
+                            <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                </path>
+                                <linearGradient id="heart-svg-gradient" x2="0" y2="2">
+                                    <stop offset="0%" stop-color="var(--color-stop-1)" />
+                                    <stop offset="50%" stop-color="var(--color-stop-2)" />
+                                </linearGradient>
+                            </svg>
+                        </span>
                     </h1>
                     <h2>entrées</h2>
-                    <div class="card-items">
-                        <a class="card-link fade" data-delay="1">
+                    <div class="card__items">
+                        <a class="card__link fade" data-delay="1">
                             <article>
-                                <h3 class="card-title">Ravioles de foie gras</h3>
-                                <div class="card-details">
+                                <h3 class="card__title">Ravioles de foie gras</h3>
+                                <div class="card__details">
                                     <p>Accompagnés de leur crème à la truffe</p>
                                     <span class="price">25€</span>
                                 </div>
                                 <i class="fas fa-check-circle"></i>
                             </article>
                         </a>
-                        <a class="card-link fade">
+                        <a class="card__link fade">
                             <article>
-                                <h3 class="card-title">Caviar osciètre</h3>
-                                <div class="card-details">
+                                <h3 class="card__title">Caviar osciètre</h3>
+                                <div class="card__details">
                                     <p>Sur blini à la farine de blé noir</p>
                                     <span class="price">35€</span>
                                 </div>
                                 <i class="fas fa-check-circle"></i>
                             </article>
                         </a>
-                        <a class="card-link fade">
+                        <a class="card__link fade">
                             <article>
-                                <h3 class="card-title">Homard et espuma de potiron</h3>
-                                <div class="card-details">
+                                <h3 class="card__title">Homard et espuma de potiron</h3>
+                                <div class="card__details">
                                     <p>Mariné aux zestes d'orange</p>
                                     <span class="price">20€</span>
                                 </div>
                                 <i class="fas fa-check-circle"></i>
                             </article>
                         </a>
-                        <a class="card-link fade">
+                        <a class="card__link fade">
                             <article>
-                                <h3 class="card-title">Foie gras de canard cuit entier</h3>
-                                <div class="card-details">
+                                <h3 class="card__title">Foie gras de canard cuit entier</h3>
+                                <div class="card__details">
                                     <p>Confiture de figue et pain toasté</p>
                                     <span class="price">35€</span>
                                 </div>
@@ -82,31 +90,31 @@
                         </a>
                     </div>
                     <h2>Plats</h2>
-                    <div class="card-items">
-                        <a class="card-link fade">
+                    <div class="card__items">
+                        <a class="card__link fade">
                             <article>
-                                <h3 class="card-title">Noix de coquilles Saint-Jacques</h3>
-                                <div class="card-details">
+                                <h3 class="card__title">Noix de coquilles Saint-Jacques</h3>
+                                <div class="card__details">
                                     <p>Sur lit de purée de céleri-rave</p>
                                     <span class="price">40€</span>
                                 </div>
                                 <i class="fas fa-check-circle"></i>
                             </article>
                         </a>
-                        <a class="card-link fade">
+                        <a class="card__link fade">
                             <article>
-                                <h3 class="card-title">Langoustine poêlée</h3>
-                                <div class="card-details">
+                                <h3 class="card__title">Langoustine poêlée</h3>
+                                <div class="card__details">
                                     <p>Purée de patate douce</p>
                                     <span class="price">35€</span>
                                 </div>
                                 <i class="fas fa-check-circle"></i>
                             </article>
                         </a>
-                        <a class="card-link fade">
+                        <a class="card__link fade">
                             <article>
-                                <h3 class="card-title">Mijoté de queue de boeuf</h3>
-                                <div class="card-details">
+                                <h3 class="card__title">Mijoté de queue de boeuf</h3>
+                                <div class="card__details">
                                     <p>Et riz sauvage aux zestes de citron</p>
                                     <span class="price">44€</span>
                                 </div>
@@ -115,31 +123,31 @@
                         </a>
                     </div>
                     <h2>Desserts</h2>
-                    <div class="card-items">
-                        <a class="card-link fade">
+                    <div class="card__items">
+                        <a class="card__link fade">
                             <article>
-                                <h3 class="card-title">Macaron noisette et chocolat</h3>
-                                <div class="card-details">
+                                <h3 class="card__title">Macaron noisette et chocolat</h3>
+                                <div class="card__details">
                                     <p>Glace au caramel brun et sel de Guérande</p>
                                     <span class="price">18€</span>
                                 </div>
                                 <i class="fas fa-check-circle"></i>
                             </article>
                         </a>
-                        <a class="card-link fade">
+                        <a class="card__link fade">
                             <article>
-                                <h3 class="card-title">Baba au rhum revisité</h3>
-                                <div class="card-details">
+                                <h3 class="card__title">Baba au rhum revisité</h3>
+                                <div class="card__details">
                                     <p>Avec son coulis de citron</p>
                                     <span class="price">22€</span>
                                 </div>
                                 <i class="fas fa-check-circle"></i>
                             </article>
                         </a>
-                        <a class="card-link fade">
+                        <a class="card__link fade">
                             <article>
-                                <h3 class="card-title">Tarte au citron meringuée</h3>
-                                <div class="card-details">
+                                <h3 class="card__title">Tarte au citron meringuée</h3>
+                                <div class="card__details">
                                     <p>Déstructurée</p>
                                     <span class="price">23€</span>
                                 </div>
@@ -147,10 +155,10 @@
                             </article>
                         </a>
                     </div>
-                    <div class="command-btn--center">
-                        <a class="btn-link" href="#">Commander</a>
+                    <div class="order--center">
+                        <a class="btn__link" href="#">Commander</a>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
