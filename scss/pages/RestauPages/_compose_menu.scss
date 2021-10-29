@@ -3,27 +3,19 @@
     width: 100%;
 
     @include lg {
-        margin: 30px 0 80px 0;
-        padding: 0 50px;
+        // margin: 50px 0 80px 0;
+        // padding: 0 50px;
     }
 }
 
-.card-container {
+.card__container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
     margin: auto;
 
-    @include lg {
-        flex-direction: row-reverse;
-        border-radius: 30px;
-        box-shadow: $box-shadow;
-        -webkit-box-shadow: $box-shadow;
-        -moz-box-shadow: $box-shadow;
-        overflow: hidden;
-    }
-
-    .card-img {
+    .card__img {
         width: 100%;
         height: 215px;
         object-fit: cover;
@@ -34,14 +26,13 @@
         }
 
         @include lg {
-            width: 30%;
-            height: auto;
-            opacity: 0.5;
+            height: 400px;
+            opacity: 0.8;
             margin-left: -5px;
         }
     }
 
-    .card-menu {
+    .card__menu {
         margin-top: -35px;
         width: 100%;
         padding: 25px 10px;
@@ -49,13 +40,14 @@
         border-radius: 30px 30px 0 0;
 
         @include lg {
-            background-color: $white;
             margin-left: auto;
             margin-right: auto;
-            margin-top: unset;
+            z-index: 1;
             padding: 30px 50px;
-            max-width: 800px;
-            border-radius: 0;
+            box-shadow: $box-shadow;
+            -webkit-box-shadow: $box-shadow;
+            -moz-box-shadow: $box-shadow;
+            max-width: 900px;
         }
 
         h1 {
@@ -71,7 +63,7 @@
                 font-size: 3rem;
             }
 
-            .btn-fav {
+            .btn__fav {
                 top: 0;
                 bottom: 0;
                 margin: auto;
@@ -105,7 +97,7 @@
         }
     }
 
-    .card-items {
+    .card__items {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -116,7 +108,7 @@
             gap: 20px;
         }
 
-        .card-link {
+        .card__link {
             padding: 8px;
             border-radius: 12px;
             background-color: $white;
@@ -133,7 +125,7 @@
                 line-height: 24px;
             }
 
-            .card-title {
+            .card__title {
                 font-size: 16px;
                 text-overflow: ellipsis;
                 white-space: nowrap;
@@ -146,7 +138,7 @@
                 }
             }
 
-            .card-details {
+            .card__details {
                 display: flex;
                 width: 100%;
                 transition: width 0.5s;
@@ -205,7 +197,7 @@
 
             &:hover,
             &:focus {
-                .card-title {
+                .card__title {
                     width: 60%;
                 }
 
@@ -221,7 +213,7 @@
                     animation: margin-price 0.3s linear forwards;
                 }
 
-                .card-details {
+                .card__details {
                     width: 98%;
 
                 }
@@ -229,13 +221,13 @@
         }
     }
 
-    .btn-link {
+    .btn__link {
         padding: 12px 40px;
         margin: 10px auto 20px auto;
         font-size: 14px;
     }
 
-    .command-btn--center {
+    .order--center {
         margin-bottom: 15px;
         text-align: center;
     }

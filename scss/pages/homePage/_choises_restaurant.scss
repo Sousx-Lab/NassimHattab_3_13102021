@@ -4,9 +4,9 @@
     padding-bottom: 60px;
 
     @include md {
-        background-color: unset;
-        margin-bottom: 60px;
-        padding-top: 0;
+        // background-color: unset;
+        // margin-bottom: 60px;
+        padding: 60px 10% 200px 10%;
 
         h1 {
             text-align: center;
@@ -18,7 +18,7 @@
         }
     }
 
-    .card-groups {
+    .card__groups {
         display: flex;
         width: 100%;
         flex-direction: column;
@@ -30,12 +30,7 @@
             gap: 40px;
         }
 
-        &>.card-link {
-            all: unset;
-            cursor: pointer;
-        }
-
-        .card {
+        .card__link{
             position: relative;
             width: 100%;
             margin-top: 0;
@@ -44,6 +39,9 @@
             -webkit-box-shadow: $box-shadow;
             -moz-box-shadow: $box-shadow;
             transition: transform 150ms;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
 
             @include md {
                 &:hover {
@@ -61,7 +59,7 @@
             }
         }
 
-        .card-img {
+        .card__img {
             width: 100%;
             height: 145px;
             object-fit: cover;
@@ -74,7 +72,7 @@
             }
         }
 
-        .card-info {
+        .card__info {
             margin: 10px 10px 12px 10px;
 
             h4 {
@@ -97,7 +95,7 @@
             }
         }
 
-        .card-new-tag {
+        .card__new-tag {
             position: absolute;
             padding: 6px 12px;
             background-color: $green;
