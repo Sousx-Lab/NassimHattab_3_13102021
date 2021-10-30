@@ -128,22 +128,23 @@
 #explore {
     text-align: center;
     width: 100%;
-    padding: 45px 40px;
+    padding: 30px 20px 45px;
     background-color: $light-gray;
 
     @include md {
         background-color: unset;
     }
-
-    p {
+    h1{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    h2 {
         opacity: 0.5;
+        font-size: 14px;
+        font-weight: 500;
 
         @include md {
             font-size: 20px;
         }
-    }
-
-    .btn__link {
-        padding: 15px 25px;
     }
 }

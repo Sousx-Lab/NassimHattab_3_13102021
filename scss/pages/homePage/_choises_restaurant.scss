@@ -5,7 +5,6 @@
 
     @include md {
         // background-color: unset;
-        // margin-bottom: 60px;
         padding: 60px 10% 200px 10%;
 
         h1 {
@@ -75,7 +74,7 @@
         .card__info {
             margin: 10px 10px 12px 10px;
 
-            h4 {
+            h2 {
                 font-weight: 800;
                 margin-bottom: 3px;
                 width: 100%;
@@ -84,7 +83,7 @@
                 display: inline-block;
 
                 @include lg {
-                    font-size: 18px;
+                    font-size: 20px;
                 }
 
             }
@@ -92,6 +91,9 @@
             p {
                 opacity: 0.5;
                 font-size: 14px;
+                @include lg{
+                    font-size: 16px;
+                }
             }
         }
 
