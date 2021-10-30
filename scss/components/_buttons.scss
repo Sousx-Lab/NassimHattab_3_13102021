@@ -39,12 +39,12 @@
         --color-stop-2: #FF79DA;
     }
 
-    &:focus {
+    &:focus, &:active{
         .heart {
             @include heart-gradient();
         }
     }
-
+    
     @include md {
         &:hover {
             .heart {
