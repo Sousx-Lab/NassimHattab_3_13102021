@@ -1,11 +1,6 @@
 #restau-menu {
     padding: 0;
     width: 100%;
-
-    @include lg {
-        // margin: 50px 0 80px 0;
-        // padding: 0 50px;
-    }
 }
 
 .card__container {
@@ -28,7 +23,6 @@
         @include lg {
             height: 400px;
             opacity: 0.8;
-            margin-left: -5px;
         }
     }
 
