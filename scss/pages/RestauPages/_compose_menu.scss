@@ -56,14 +56,6 @@
             @include lg {
                 font-size: 3rem;
             }
-
-            .btn__fav {
-                top: 0;
-                bottom: 0;
-                margin: auto;
-                right: 4%;
-                font-size: 20px;
-            }
         }
 
         h2 {
@@ -215,15 +207,14 @@
         }
     }
 
-    .btn__link {
-        padding: 12px 40px;
-        margin: 10px auto 20px auto;
-        font-size: 14px;
-    }
-
     .order--center {
         margin-bottom: 15px;
         text-align: center;
+    }
+
+    .btn__link {
+        padding: 12px 40px;
+        margin: 10px auto 20px auto;
     }
 
     @keyframes select-dish {
