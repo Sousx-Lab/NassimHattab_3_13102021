@@ -9,7 +9,6 @@
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-    margin: auto;
 
     &__img {
         width: 100%;
@@ -23,7 +22,6 @@
 
         @include lg {
             height: 400px;
-            opacity: 0.8;
         }
     }
 
