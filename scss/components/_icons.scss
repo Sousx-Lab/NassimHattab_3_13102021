@@ -1,6 +1,6 @@
 @mixin heart-gradient {
     font-weight: 600;
-    background: -webkit-linear-gradient($purple, $pink);
+    background: -webkit-linear-gradient($primary, $secondary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -42,7 +42,6 @@
     &--store {
         &::before {
             content: '\f54e';
-            color: rgba($purple, $alpha: 1.0);
         }
 
     }
