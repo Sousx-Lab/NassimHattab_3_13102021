@@ -73,8 +73,12 @@
         font-size: 16px;
         font-family: $roboto;
         font-weight: 700;
-        border-radius: 23px;
-
+        border-radius:  0 23px 23px 0;
+        &:-webkit-autofill { 
+            filter:none;
+            background-color: transparent !important;
+            box-shadow: 0 0 0 50px $white inset;
+        }
         &:focus {
             outline: none;
         }
