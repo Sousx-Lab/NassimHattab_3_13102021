@@ -2,36 +2,63 @@
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    &--link{
-    color: #000000;
-    margin-top: 25px;
-    background: linear-gradient($secondary, $primary);
-    box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.78);
-    -webkit-box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.78);
-    -moz-box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.78);
-    color: $white;
-    font-size: 0.8rem;
-    border-radius: 23px;
-    opacity: 0.8;
-    font-weight: 400;
-    padding: 15px 20px;
 
-    @include md {
-        font-size: 14px;
+    &--link {
+        color: #000000;
+        margin-top: 25px;
+        background: linear-gradient($secondary, $primary);
+        box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.78);
+        -webkit-box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.78);
+        -moz-box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.78);
+        color: $white;
+        font-size: 0.8rem;
+        border-radius: 23px;
+        opacity: 0.8;
+        font-weight: 400;
+        padding: 15px 20px;
+
+        @include md {
+            font-size: 14px;
+        }
+
+        &:hover {
+            box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.90);
+            -webkit-box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.90);
+            -moz-box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.90);
+            opacity: 0.7;
+        }
     }
 
-    &:hover {
-        box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.90);
-        -webkit-box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.90);
-        -moz-box-shadow: 0px 5px 14px -4px rgba(0, 0, 0, 0.90);
-        opacity: 0.7;
-    }
-    }
-    
-    &--fav{
+    &--back {
         position: absolute;
-        right: 3%;
-        top: 0;
-        border: none;
+        margin-left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: inherit;
+        opacity: 0.8;
+        font-size: 18px;
+        background-color: transparent;
+        border-radius: 50%;
+        padding: 5px 10px;
+        font-size: 18px;
+        transition: background-color 150ms;
+
+        &::before {
+            content: "\f060";
+            font-family: $fontAwesome;
+            font-weight: 900;
+            font-size: inherit;
+        }
+
+        @include lg {
+            font-size: 22px;
+            margin-left: 50px;
+
+            &:hover {
+                background-color: $grey;
+                color: $dark;
+            }
+        }
+
     }
 }

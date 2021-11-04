@@ -51,7 +51,14 @@
             display: block;
             padding: 0 8px;
             margin-bottom: 25px;
-
+            .icon{
+                position: absolute;
+                right: 3%;
+                top: 50%;
+                transform: translateY(-50%);
+                border: none;
+                cursor: pointer;
+            }
             @include lg {
                 font-size: 3rem;
             }

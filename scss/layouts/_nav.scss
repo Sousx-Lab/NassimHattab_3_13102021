@@ -19,38 +19,6 @@
         padding: 0 40px;
     }
 
-    .back--link {
-        position: absolute;
-        margin-left: 20px;
-        height: 100%;
-        vertical-align: middle;
-        color: inherit;
-        opacity: 0.8;
-        font-size: 18px;
-
-        .fas.fa-arrow-left {
-            position: relative;
-            font-size: inherit;
-            transition: background-color 150ms;
-            background-color: transparent;
-            border-radius: 50%;
-            padding: 8px 10px;
-            top: 50%;
-            transform: translateY(-50%);
-
-        }
-
-        @include lg {
-            font-size: 24px;
-
-            &:hover>.fas.fa-arrow-left {
-                background-color: $grey;
-                color: $dark;
-            }
-        }
-
-    }
-
     .logo {
         position: absolute;
         left: 0;
