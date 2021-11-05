@@ -48,6 +48,10 @@
         justify-content: center;
         height: 100%;
 
+        .icon {
+            font-size: 14px;
+        }
+
         @include md {
             margin: 70px auto 20px auto;
             width: 50%;
@@ -73,12 +77,13 @@
         font-size: 16px;
         font-family: $roboto;
         font-weight: 700;
-        border-radius:  0 23px 23px 0;
-        &:-webkit-autofill { 
-            filter:none;
+
+        &:-webkit-autofill {
+            filter: none;
             background-color: transparent !important;
             box-shadow: 0 0 0 50px $white inset;
         }
+
         &:focus {
             outline: none;
         }

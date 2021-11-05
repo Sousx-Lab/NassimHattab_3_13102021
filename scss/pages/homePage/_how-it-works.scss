@@ -35,7 +35,7 @@
                 width: 50%;
             }
 
-            strong {
+            h4 {
                 margin: 25px 0 23px 0;
                 font-size: 14px;
 
@@ -64,7 +64,7 @@
 
         }
 
-        :nth-child(3):not(strong) {
+        :nth-child(3):not(h4) {
             background-color: rgba($primary, $alpha: 0.1);
         }
     }
