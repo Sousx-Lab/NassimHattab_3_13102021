@@ -47,9 +47,13 @@
         display: flex;
         justify-content: center;
         height: 100%;
-
         .icon {
-            font-size: 14px;
+           font-size: 14px;
+           margin-left: 60px;
+           @include md{
+               font-size: initial;
+               margin: 0 20px;
+           }
         }
 
         @include md {
@@ -77,7 +81,6 @@
         font-size: 16px;
         font-family: $roboto;
         font-weight: 700;
-
         &:-webkit-autofill {
             filter: none;
             background-color: transparent !important;
