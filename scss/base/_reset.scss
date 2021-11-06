@@ -21,7 +21,8 @@ body {
     overflow-x: hidden;
     position: relative;
 }
-#index-body{
+
+#index-body {
     animation: body-overflowY $loader-duration linear forwards;
 }
 
@@ -41,7 +42,8 @@ li {
     list-style: none;
 }
 
-h1,h3 {
+h1,
+h3 {
     font-weight: 800;
     padding-bottom: 15px;
     font-size: 20px;
@@ -51,4 +53,3 @@ h1,h3 {
         padding-bottom: 30px;
     }
 }
-
