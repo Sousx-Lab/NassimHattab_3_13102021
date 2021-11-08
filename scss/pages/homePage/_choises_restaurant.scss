@@ -106,7 +106,8 @@
                 }
             }
 
-            &__new-tag {
+            &__new-tag::before {
+                content: 'Nouveau';
                 position: absolute;
                 padding: 6px 12px;
                 background-color: $success;
