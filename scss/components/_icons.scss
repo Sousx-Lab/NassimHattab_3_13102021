@@ -76,5 +76,17 @@
         }
 
     }
+    &--utensils{
+        &::before{
+            content: '\f2e7';
+            
+        }
+    }
+
+    &--hands-helping{
+        &::before{
+            content: '\f4c4';
+        }
+    }
 
 }

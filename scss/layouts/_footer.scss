@@ -44,6 +44,7 @@
 
     &__nav {
         line-height: 20px;
+        color: $white;
 
         @include lg {
             &-items {
@@ -51,30 +52,31 @@
 
                 &:nth-child(1n+2)::before {
                     content: ' | ';
-                    color: $white;
                     padding: 0 10px;
                 }
             }
 
         }
 
-        .fas {
+        .icon {
+            line-height: 10px;
+            margin: 0;
             font-size: 10px;
-            padding-right: 10px;
+            padding-right: 7px;
+            opacity: inherit;
 
             @include md {
                 font-size: 14px;
-            }
 
-            &.fa-hands-helping {
-                font-size: 7.5px;
-
-                @include md {
+                &--hands-helping {
                     font-size: 12px;
                 }
             }
-        }
 
+            &--hands-helping {
+                padding-right: 4px;
+            }
+        }
     }
 
 }
