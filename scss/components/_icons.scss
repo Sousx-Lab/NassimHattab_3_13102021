@@ -76,16 +76,23 @@
         }
 
     }
-    &--utensils{
-        &::before{
+
+    &--utensils {
+        &::before {
             content: '\f2e7';
-            
+
         }
     }
 
-    &--hands-helping{
-        &::before{
+    &--hands-helping {
+        &::before {
             content: '\f4c4';
+        }
+    }
+
+    &--check-circle {
+        &::before {
+            content: '\f058';
         }
     }
 

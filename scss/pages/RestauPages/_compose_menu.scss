@@ -120,7 +120,7 @@
             line-height: 24px;
         }
 
-        .fa-check-circle {
+        .icon {
             position: absolute;
             top: 0;
             bottom: auto;
@@ -146,11 +146,11 @@
 
         &:hover,
         &:focus {
-            .card__title {
+            .card-restau__title {
                 width: 60%;
             }
 
-            .fa-check-circle {
+            .icon {
                 animation: select-dish 0.5s forwards;
 
                 &::before {
@@ -162,7 +162,7 @@
                 animation: margin-price 0.3s linear forwards;
             }
 
-            .card__details {
+            .card-restau__details {
                 width: 98%;
 
             }
