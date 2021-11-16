@@ -1,9 +1,37 @@
 @mixin heart-gradient {
-    font-weight: 600;
-    background: -webkit-linear-gradient($primary, $secondary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    animation: heart 200ms linear forwards;
+
+    @keyframes heart {
+        0% {
+            opacity: 1;
+            font-weight: 500;
+        }
+
+        40% {
+            opacity: 0.5;
+            font-weight: 500;
+        }
+
+        60% {
+            opacity: 0;
+            font-weight: 500;
+        }
+
+        80% {
+            font-size: 26px;
+
+        }
+
+        100% {
+            opacity: 1;
+            font-weight: 600;
+            background: -webkit-linear-gradient($primary, $secondary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+
 }
 
 .icon {
@@ -68,6 +96,9 @@
         }
 
         @include md {
+
+            &:active,
+            &:focus,
             &:hover {
                 &::before {
                     @include heart-gradient();
