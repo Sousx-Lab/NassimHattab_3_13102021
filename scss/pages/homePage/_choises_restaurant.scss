@@ -38,10 +38,12 @@
             -webkit-box-shadow: $box-shadow;
             -moz-box-shadow: $box-shadow;
             transition: transform 150ms;
-            text-decoration: none;
-            color: inherit;
             cursor: pointer;
-
+            a{
+                text-decoration: none;
+                color: inherit;
+                
+            }
             @include md {
                 &:hover {
                     -ms-transform: perspective(1px) scale(1.01) translateX(0);
